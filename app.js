@@ -12,7 +12,7 @@ search.addEventListener('click', () => {
 
   axios
     .get(
-      `https:api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey},{${city}}`
+      `https:api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`
     )
     .then((result) => console.log(result))
     .catch((error) => console.log(error));
