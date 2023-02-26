@@ -51,12 +51,12 @@ search.addEventListener('click', () => {
           image.src = '';
       }
 
-      temperature.innerHTML = `${parseFloat(result.data.main.temp).toFixed(
+      temperature.innerHTML = `${Number(result.data.main.temp).toFixed(
         1
       )}<span>°C</span>`;
       description.innerHTML = `${result.data.weather[0].description}`;
       humidity.innerHTML = `${result.data.main.humidity}%`;
-      wind.innerHTML = `${parseFloat(result.data.wind.speed).toFixed(1)}Km/h`;
+      wind.innerHTML = `${Number(result.data.wind.speed).toFixed(1)} Km/h`;
 
       weatherBox.style.display = '';
       weatherDetails.style.display = '';
